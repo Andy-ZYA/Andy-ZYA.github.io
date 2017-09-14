@@ -81,7 +81,7 @@
             e.g. http://chat.codes/firstChannel<br>
             Note:  Only works with Google Chrome
             </p>
-            <img class="gif" src="img/CreateANewChannel.gif" alt="This will display an animated GIF" />
+            <img class="gif" src="img/create-a-new-channel.gif" alt="This will display an animated GIF" />
           </div>
           
           <hr>
@@ -163,24 +163,39 @@
             <a>
               <h2 class="post-title">Linking to Code</h2>
               <h4 class="post-subtitle">CodeLink is a link inside a message that refers to certain part of code of certain file</h4>
-              <h4 class="post-subtitle">In ChatInput Field, it shows in the form of</h4>
-              <h4 class="post-subtitle">  [ {text} ]( {FileName}:L{StartRow},{StartColumn}-L{EndRow},{EndColumn} )</h4>
-              <h4 class="post-subtitle">When sent, a CodeLink looks just like a link.</h4>
-              <img class="gif" id="code-link-left" src="img/CodeLinkChatInput.png" alt="This will display an animated GIF" />
-              <img class="gif" id="code-link-right" src="img/CodeLinkMessage.png" alt="This will display an animated GIF" />
+              <h4 class="post-subtitle">•&nbsp;&nbsp;In ChatInput Field, it shows in the form of</h4>
+              <div id="code-link-text-container">
+              <h4 id="code-link-text" class="bold">[</h4>
+              <h4 id="code-link-text" class="red">{text}</h4>
+              <h4 id="code-link-text" class="bold">](</h4>
+              <h4 id="code-link-text" class="blue">{FileName}</h4>
+              <h4 id="code-link-text" class="bold">:L</h4>
+              <h4 id="code-link-text" class="yellow">{StartRow}</h4>
+              <h4 id="code-link-text" class="bold">,</h4>
+              <h4 id="code-link-text" class="yellow">{StartColumn}</h4>
+              <h4 id="code-link-text" class="bold">-L</h4>
+              <h4 id="code-link-text" class="green">{EndRow}</h4>
+              <h4 id="code-link-text" class="bold">,</h4>
+              <h4 id="code-link-text" class="green">{EndColumn}</h4>
+              <h4 id="code-link-text" class="bold"> )</h4>
+              </div>
+
+              <h4 class="post-subtitle">•&nbsp;&nbsp;When sent, a CodeLink looks just like a link.</h4>
+              <img class="gif" id="code-link-left" src="img/codelink-chatinput.png" alt="This will display a png" />
+              <img class="gif" id="code-link-right" src="img/codelink-message.png" alt="This will display a png" />
               <h4 class="post-subtitle">•&nbsp;&nbsp;Creating code links: Select any part of code in the Editor, and a CodeLink for it will appear automatically in ChatInput Field</h4>
               <img class="gif" src="img/create-a-code-link.gif" alt="This will display an animated GIF" />
               <h4 class="post-subtitle">•&nbsp;&nbsp;Move your cursor over a CodeLink, the LinkedFile will go back to earlier version and the LinkedCode will be highlighted</h4>
               <img class="gif" src="img/move-cursor-to-code-link.gif" alt="This will display an animated GIF" />
               <h4 class="post-subtitle">•&nbsp;&nbsp;Click on a CodeLink, and the earlier version of LinkedFile will be shown and LinkedCode will be highlighted for 3 seconds</h4>
+              
+            </a>
               <p class="post-meta">
                 Note: Press ShowCurrentCode button to show current code
               </p>
               <img class="gif" src="img/click-on-a-code-link.gif" alt="This will display an animated GIF" />
-            </a>
             
           </div>
-          <hr>
 
         </div>
       </div>
@@ -193,7 +208,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <ul class="list-inline text-center">
+            <!-- <ul class="list-inline text-center">
               <li class="list-inline-item">
                 <a href="#">
                   <span class="fa-stack fa-lg">
@@ -218,8 +233,8 @@
                   </span>
                 </a>
               </li>
-            </ul>
-            <p class="copyright text-muted">Copyright &copy; Your Website 2017</p>
+            </ul> -->
+            <p class="copyright text-muted" id="copy-right">Copyright &copy; chat.codes 2017</p>
           </div>
         </div>
       </div>

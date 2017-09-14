@@ -9,8 +9,49 @@ body {
   font-family: 'Lora', 'Times New Roman', serif;
 }
 
-#codelinkchatinput{
+#copy-right{
+  padding: 0px;
+  text-align: center;
+}
 
+#code-link-text-container{
+  /*background: rgb(239,239,239);*/
+  -webkit-box-shadow: 5px 10px 45px -12px rgba(41, 40, 41, 1);
+  -moz-box-shadow: 5px 10px 45px -12px rgba(41, 40, 41, 1);
+  box-shadow: 5px 10px 45px -12px rgba(41, 40, 41, 1);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h4#code-link-text{
+  font-size: 18px;
+  display : inline;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+h4.bold{
+  font-style: bold;
+}
+
+h4.red{
+  color: red;
+  font-weight: normal;
+}
+
+h4.blue{
+  color: blue;
+  font-weight: normal;
+}
+
+h4.yellow{
+  color: rgb(255,127,80);
+  font-weight: normal;
+}
+
+h4.green{
+  color: green;
+  font-weight: normal;
 }
 
 p {
@@ -24,7 +65,7 @@ p a {
 }
 
 a img{
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 
@@ -33,7 +74,7 @@ a img{
   -moz-box-shadow: 5px 10px 45px -12px rgba(41, 40, 41, 1);
   box-shadow: 5px 10px 45px -12px rgba(41, 40, 41, 1);
   display: block;
-  margin-top: 12px;
+  margin-top: 18px;
 }
 
 @media only screen and (min-width:992px) {
